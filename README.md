@@ -1,2 +1,1 @@
-E-klade
 Datormācība(pamatkurss)
