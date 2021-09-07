@@ -1,2 +1,2 @@
-# RECV0
-Datormācība(pamatkurss) e-klade
+E-klade
+Datormācība(pamatkurss)
