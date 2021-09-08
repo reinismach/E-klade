@@ -23,3 +23,7 @@ cd .. - pārvieto uz augstāku direktoriju. Piemēram: ja pwd ir Users/user/docu
 cd ~ vai cd - pārvieto uz māju jeb sākuma direktoriju.
 
 history - parāda darbību vēsturi.
+
+bash - pārmaina shellu uz bash.
+
+man - manuāls, kas parāda info par komandu. Piemērs: man ls (tiks parādīta informācija par komandu ls).
