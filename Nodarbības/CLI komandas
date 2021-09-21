@@ -170,3 +170,4 @@ gcc -save-temps first_code.c -o first.out
   93 ls -lt
   94 nano first_code.s
   95 history 
+ skaitīšanas sistēma http://www.ecowin.org/ascii.htm
