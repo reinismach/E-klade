@@ -12,6 +12,9 @@ ls - parāda direktorijas saturu.
 
 ls -l - parāda direktorijas saturu un ar to saistītos datus.
 
+ls -t - parāda direktorijas saturu sākot ar jaunākajiem rediģētajiem datiem.
+
+ls -l - parāda direktorijas saturu un ar to saistītos datus.k
 ls -a - parāda visu direktorijas saturu, ieskaitot slēptos failus un mapes.
 
 ls -la - parāda visu direktorijas saturu, ieskaitot slēptos failus un mapes, kā arī ar saturu saistītos datus.
@@ -38,9 +41,9 @@ find - parāda visus failus izvēlētajā vietā pēc to kārtības secības.
 
 cp - nokopē izvēlēto failu un ievieto nokopēto failu jaunā vietā. Piemērs cp /root/readme.txt /tmp/readme_copy.txt
 
-ls -lt /tmp/ - parāda sarakstu tieši vajadzīgajā direktorijā(šajā gadījumā - tmp), neizejot no pašreizējās direktorijas.
+ls -lt tmp - parāda sarakstu tieši vajadzīgajā direktorijā(šajā gadījumā - tmp), neizejot no pašreizējās direktorijas.
 
-mv - pārvieto izvēlēto failu uz izvēlēto vietu. Ja jaunajā vietā fails tiek nosaukts ciādi, tad tā nosaukums mainās. 
+mv - pārvieto izvēlēto failu uz izvēlēto vietu. Ja jaunajā vietā fails tiek nosaukts citādi, tad tā nosaukums mainās. 
 Piemērs mv ../tmp/readme_copy.txt ./readme_copy_moved.txt
 
 rm - izdzēš izvēlēto failu.
@@ -69,109 +72,33 @@ chmod - dod iespēju modificēt failu. Piemērs: chmod 444 test.txt
  
 echo $PATH - parāda ceļu, caur kuru sistēma meklē ievadītās komandas.
 
-gcc -save-temps first_code.c -o first.out
+ctrl + l - notīra ekrānu
 
-0 gcc
-   1 nano first_code.c
-   2 ls -lt
-   3 cat first_code.c
-   4 gcc --help
-   5 ls -lt
-   6 gcc -Wall -save-temps first_code.c -o first.out
-   7 ls -lt
-   8 ./first.out
-   9 cat first_code.
-  10 cat first_code.c
-  11 nano first_code.c
-  12 ls -lt
-  13 cat first_code.c
-  14 gcc -Wall -save-temps first_code.c -o first.out
-  15 nano first_code.c
-  16 ls -lt
-  17 cat first_code.c
-  18 gcc -Wall -save-temps first_code.c -o first.out
-  19 nano first_code.c
-  20 ls -lt
-  21 cat first_code.c
-  22 gcc -Wall -save-temps first_code.c -o first.out
-  23 ls -lt
-  24 echo $? 
-  
-  25 first.out
-  26 echo $?
-  27 nano first_code.c
-  28 gcc -Wall -save-temps first_code.c -o first.out
-  29 ls -lt
-  30 ./first.out
-  31 echo $?
-  32 nano first_code.c
-  33 ls -lt
-  34 ./first.out
-  35 nano first_code.c
-  36 ls -lt
-  37 gcc -Wall -save-temps first_code.c -o first.out
-  38 ls -lt
-  39 nano first_code.c
-  40 ls -lt
-  41 gcc -Wall -save-temps first_code.c -o first.out
-  42 ls -lt
-  43 nano first_code.c
-  44 ls -lt
-  45 gcc -Wall -save-temps first_code.c -o first.out
-  46 ls -lt
-  47 nano first_code.c
-  48 ls -lt
-  49 gcc -Wall -save-temps first_code.c -o first.out
-  50 ls -lt
-  51 ./first.out
-  52 ls -lt
-  53 cat first_code.c 
-  
-  54 cat first_code.i
-  55 cat first_code.s
-  56 cat first_code.o
-  57 cat first_code.c
-  58 cat first_code.i
-  59 cat first_code.s
-  60 cat first_code.o
-  61 hexdump -C first_code.o
-  62 ls -lt
-  63 cat first.out
-  64 hexdump -C first.out
-  65 ls -lt
-  66 rm *.o *.s *.i
-  67 ls -lt
-  68 gcc first_code.c
-  69 ls -lt
-  70 ./a.out
-  71 cat first_code.c
-  72 ls -lt
-  73 nano first_code.c
-  74 ls -lt
-  75 gcc -save-temps first_code.c -o first.out
-  76 ls -lt
-  77 nano first_code.c
-  78 gcc first_code.c 
-  
-  79 gcc -Wall first_code.c
-  80 ./a.out
-  81 echo $?
-  82 nano first_code.c
-  83 gcc first_code.c
-  84 nano test.sh
-  85 ls -lt
-  86 chmod 744 test.sh
-  87 ./test.sh
-  88 nano first_code.c
-  89 ./test.sh
-  90 nano
-  91 ls -lt
-  92 gcc -save-temps first_code.c -o first.out
-  93 ls -lt
-  94 nano first_code.s
-  95 history 
- 
- skaitīšanas sistēma http://www.ecowin.org/ascii.htm
- 
-C programmas izveidošana
-https://csgeekshub.com/c-programming/c-program-compilation-steps-example-with-gcc-linux/
+echo $? - parāda ar ko beidzās iepriekšējā komanda(kāda kļūda vai pareiza izpilde).
+
+
+
+
+  C programmas kompilēšanas soļi:  https://csgeekshub.com/c-programming/c-program-compilation-steps-example-with-gcc-linux/
+
+
+nano tests.c - atver text editor, kurā var uzrakstīt C kodu. Piemērs pavisam vienkāršam C valodas kodam: 
+
+#include <stdio.h>
+
+int
+main (void)
+{
+printf ("Hello, world!\n");
+return 0;
+}
+
+gcc - nokompilē c valodas programmu. Komanda "-save-temps" parādīs izveidotus visu soļu failus. Komanda "-Wall" parādīs warnings, ja tādi būs. Komanda "tests.c -o tests.out" izdara pēdējo kompilēšanas soli - linking process.  Piemērs: gcc -Wall -save-temps first_code.c -o first.out
+./tests.out - izpilda kodu
+cat first_code.c - atver C koda failu.
+cat first_code.i - atver pre-processed failu.
+cat first_code.s - atver assembly failu.
+cat first_code.o - atver object failu.
+
+skaitīšanas sistēma http://www.ecowin.org/ascii.htm
+
