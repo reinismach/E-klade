@@ -1,5 +1,11 @@
 Komandu darbības:
 
+
+
+Šīs vēl jāpievieno: https://www.hostinger.com/tutorials/linux-commands
+
+
+
 echo $0 - parāda ar kādu shellu pašlaik tiek strādāts.
 
 whoami - parāda lietotāja nosaukumu.
