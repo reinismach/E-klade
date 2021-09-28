@@ -1,6 +1,6 @@
-Datormācība(pamatkurss)
+                    Datormācība(pamatkurss)
 
-Komandu darbības:
+          Komandu darbības:
 
 
 
