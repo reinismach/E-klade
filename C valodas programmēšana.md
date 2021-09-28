@@ -1,4 +1,4 @@
-C programmas kompilēšanas soļi:  https://csgeekshub.com/c-programming/c-program-compilation-steps-example-with-gcc-linux/
+! C programmas kompilēšanas soļi:  https://csgeekshub.com/c-programming/c-program-compilation-steps-example-with-gcc-linux/
 
 nano tests.c - atver text editor, kurā var uzrakstīt C kodu. Piemērs pavisam vienkāršam C valodas kodam: 
 
@@ -11,35 +11,37 @@ nano tests.c - atver text editor, kurā var uzrakstīt C kodu. Piemērs pavisam 
     return 0;
     }
 
-gcc - nokompilē c valodas programmu. 
- Komanda "-save-temps" parādīs izveidotus visu soļu failus. 
- Komanda "-Wall" parādīs warnings, ja tādi būs. 
- Komanda "tests.c -o tests.out" izdara pēdējo kompilēšanas soli - linking process.  
-  Piemērs: gcc -Wall -save-temps first_code.c -o first.out
+gcc - nokompilē c valodas programmu. Komanda "-save-temps" parādīs izveidotus visu soļu failus. Komanda "-Wall" parādīs warnings, ja tādi būs. Komanda "tests.c -o tests.out" izdara pēdējo kompilēšanas soli - linking process.  
+Piemērs: gcc -Wall -save-temps first_code.c -o first.out
 
 first_code.c - C koda fails
+
 first_code.i - pre-processed fails.
+
 first_code.s - assembly fails.
+
 first_code.o - object fails.
+
 first_code.out - programma.
 
 ./first_code.out - izpilda kodu
 
-Komentāri C kodā(tie neparādās programmā, tie domāti programmētājam):
+   
+! Komentāri C kodā(tie neparādās programmā, tie domāti programmētājam):
 
-// Komentāra viena rinda
-// 1. versija sekojošajam uzdevumam
-/*
-Komentāra bloks
-no vairākām rindiņām
-*/
-int main()
-{
-return 0;
-}
+    // Komentāra viena rinda
+    // 1. versija sekojošajam uzdevumam
+    /*
+    Komentāra bloks
+    no vairākām rindiņām
+    */
+    int main()
+    {
+    return 0;
+    }
 
 
-Bibliotēkas - <stdio.h> - un komandu - printf, char, c1, c2 - izmantošana:
+! Bibliotēkas - <stdio.h> - un komandu - printf, char, c1, c2 - izmantošana:
 
     // datu tipi - Wikipedia vai C tehniskā specifikācija
     #include<stdio.h>
@@ -89,9 +91,3 @@ Bibliotēkas - <stdio.h> - un komandu - printf, char, c1, c2 - izmantošana:
 
     return 0;
     }
-
-https://csgeekshub.com/c-programming/c-program-compilation-steps-example-with-gcc-linux/
-
-skaitīšanas sistēma http://www.ecowin.org/ascii.htm
-
-https://cplusplus.com/
