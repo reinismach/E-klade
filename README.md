@@ -1,11 +1,4 @@
-Datormācība(pamatkurss)
-
 Komandu darbības:
-
-
-
-Šīs vēl jāpievieno: https://www.hostinger.com/tutorials/linux-commands
-
 
 
 echo $0 - parāda ar kādu shellu pašlaik tiek strādāts.
@@ -14,7 +7,9 @@ whoami - parāda lietotāja nosaukumu.
 
 whereis - parāda izvēlētās programmas atrašanās vietu.
 
-locate - parāda izvēlētā faila atrašanās vietu.
+locate - darbojas kā search bar. Var pielikt -i, ja neatcerās tiešu faila nosaukumu un, ja fails satur 2 vārdus atstarpēs lieto *. Piemērs: locate -i honda*xr
+
+grep - meklē izvēlēto vārdu izvēlētajā direktorijā. Piemērs: grep ciabata notes.txt
 
 pwd - parāda kādā failā vai direktorijā(mapē) pašlaik atrodies.
 
@@ -88,3 +83,24 @@ echo $? - parāda ar ko beidzās iepriekšējā komanda(kāda kļūda vai pareiz
 ctrl + k - iekš nano text editor nokopē rindiņu vai vairākas rindiņas.
 
 ctrl + u - iekš nano text editor peisto rindiņu vai rindiņas, ja ir nokopētas vairākas rindiņas.
+
+diff - salīdzina 2 failus un parāda rindiņas, kas nesakrīt. Piemērs: diff notes.txt notes1.txt
+
+ping - parāda pingu specifiskā vietnē. Piemēram: ping google.com
+
+wget - nolādē interneta failu no izvēlētā linka.
+
+top - parāda ejošos procesus datorā.
+
+ctrl + c - izbeidz ejošās komandas darbību.
+
+ctrl + z - apstādina ejošās komandas darbību.
+
+ctrl + A - pārvieto kursoru uz rindiņas sākumu.
+
+ctrl + E - pārvieto kursoru uz rindiņas beigām.
+
+TAB - autofill pārējo vārdu. Piemēram: cd Deskt..TAB => cd Desktop
+
+; - šo simbolu var izmantot, lai atdalītu komandas, tādējādi izpildot vairākas komandas vienlaikus. Piemēram: pwd; cd ..; ls
+
