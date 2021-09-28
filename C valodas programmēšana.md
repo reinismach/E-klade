@@ -26,6 +26,11 @@ first_code.out - programma.
 
 ./first_code.out - izpilda kodu
 
+ctrl + k - iekš nano text editor nokopē rindiņu vai vairākas rindiņas.
+
+ctrl + u - iekš nano text editor peisto rindiņu vai rindiņas, ja ir nokopētas vairākas rindiņas.
+
+
    
 ! Komentāri C kodā(tie neparādās programmā, tie domāti programmētājam):
 
