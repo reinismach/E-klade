@@ -12,7 +12,9 @@ echo $0 - parāda ar kādu shellu pašlaik tiek strādāts.
 
 whoami - parāda lietotāja nosaukumu.
 
-whereis - parāda izvēlētās direktorijas vai faila atrašanās vietu.
+whereis - parāda izvēlētās programmas atrašanās vietu.
+
+locate - parāda izvēlētā faila atrašanās vietu.
 
 pwd - parāda kādā failā vai direktorijā(mapē) pašlaik atrodies.
 
