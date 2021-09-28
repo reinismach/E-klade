@@ -8,7 +8,7 @@ Komandu darbības:
 
 
 
-    echo $0 - parāda ar kādu shellu pašlaik tiek strādāts.
+echo $0 - parāda ar kādu shellu pašlaik tiek strādāts.
 
 whoami - parāda lietotāja nosaukumu.
 
