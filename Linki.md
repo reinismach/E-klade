@@ -3,3 +3,5 @@ C programmas kompilēšanas soļi: https://csgeekshub.com/c-programming/c-progra
 skaitīšanas sistēma http://www.ecowin.org/ascii.htm
 
 C++ informācijas un palīdzības mājaslapa: https://cplusplus.com/
+
+C tutorials: https://www.programiz.com/c-programming
