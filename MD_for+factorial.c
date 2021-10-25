@@ -17,7 +17,7 @@ printf("Izvēlieties decimālu skaitli, kam aprēķināt faktoriālu: ");
 fflush(stdout);
 scanf("%hhd", &N);
 
-for( k=0 ; k<N ; k++ )
+for( k=1 ; k<=N ; k++ )
  
  {
  fact_old = fact;
@@ -30,7 +30,7 @@ for( k=0 ; k<N ; k++ )
   }
 
  }
-if((fact/k) == fact_old)
+if((fact/ --k) == fact_old)
 printf("skaitļa %hhd faktoriāls - %hhd\n", N, fact);
 
 }
@@ -44,7 +44,7 @@ printf("Izvēlieties decimālu skaitli, kam aprēķināt faktoriālu: ");
 fflush(stdout);
 scanf("%d", &N);
 
-for( k=0 ; k<N ; k++ )
+for( k=1 ; k<=N ; k++ )
  
  {
  fact_old = fact;
@@ -57,7 +57,7 @@ for( k=0 ; k<N ; k++ )
   }
 
  }
-if((fact/k) == fact_old)
+if((fact/ --k) == fact_old)
 printf("skaitļa %d faktoriāls - %d\n", N, fact);
 
 }
@@ -71,7 +71,7 @@ printf("Izvēlieties decimālu skaitli, kam aprēķināt faktoriālu: ");
 fflush(stdout);
 scanf("%lld", &N);
 
-for( k=0 ; k<N ; k++ )
+for( k=1 ; k<=N ; k++ )
  
  {
  fact_old = fact;
@@ -84,7 +84,7 @@ for( k=0 ; k<N ; k++ )
   }
 
  }
-if((fact/k) == fact_old)
+if((fact/ --k) == fact_old)
 printf("skaitļa %lld faktoriāls - %lld\n", N, fact);
 
 }
