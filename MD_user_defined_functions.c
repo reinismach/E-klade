@@ -1,65 +1,65 @@
 #include <stdio.h>
-void laipni_lūdzam();
-char kafijas_izmērs(char skaitlis);
-void kafijas_izvēle(char string, char kaf_izmērs);
+void laipni_luudzam();
+char kafijas_izmeers(char skaitlis);
+void kafijas_izveele(char string, char kaf_izmeers);
 char cukuru();
 
 int main()
 {
-    laipni_lūdzam();
-    char stundas, izmērs;
+    laipni_luudzam();
+    char stundas, izmeers;
     printf("Atļaujiet prasīt - cik stundas Jūs šodien esiet gulējis/usi?: ");
     scanf("%hhd", &stundas);
-    izmērs = kafijas_izmērs(stundas);
+    izmeers = kafijas_izmeers(stundas);
 
-    if(izmērs == 0)
+    if(izmeers == 0)
     printf("Jūs ievadījāt nekorektu vērtību, lūdzu, mēģiniet vēlreiz!\n");
     else
     {
     char kafija[7];
     printf("Kādu kafiju Jūs vēlētos(baltu vai melnu)?: ");
     scanf("%s", kafija);
-    kafijas_izvēle(kafija[0], izmērs);
+    kafijas_izveele(kafija[0], izmeers);
     }
     return 0;
 }
 
-void laipni_lūdzam()
+void laipni_luudzam()
 {
     printf("Laipni lūdzam online kafejnīcā!\n");
 }
-char kafijas_izmērs(char skaitlis)
+char kafijas_izmeers(char skaitlis)
 {
-    char kaf_izmērs;
+    char kaf_izmeers;
     if(skaitlis < 0 | skaitlis > 24) 
     {
-        kaf_izmērs = 0; 
+        kaf_izmeers = 0; 
         printf("Atvainojiet, bet tas nav iespējams.\n");
     }
-    else if(skaitlis <= 4) kaf_izmērs = 'L';
-    else if(skaitlis < 8) kaf_izmērs = 'M';
-    else if(skaitlis >= 8) kaf_izmērs = 'S';
-    return kaf_izmērs;
+    else if(skaitlis <= 4) kaf_izmeers = 'L';
+    else if(skaitlis < 8) kaf_izmeers = 'M';
+    else if(skaitlis >= 8) kaf_izmeers = 'S';
+    return kaf_izmeers;
 }
 
-void kafijas_izvēle(char string, char kaf_izmērs)
+void kafijas_izveele(char string, char kaf_izmeers)
 {
     char cukurs;
     if(string == 'b')
     {
         cukurs = cukuru();
         if(cukurs == 0)
-        printf("Lūdzu, Jūsu kafija izmērā %c, balta, bez cukura.\n", kaf_izmērs);
+        printf("Lūdzu, Jūsu kafija izmērā %c, balta, bez cukura.\n", kaf_izmeers);
         else if(cukurs == 1)
-        printf("Lūdzu, Jūsu kafija izmērā %c, balta, ar cukuru.\n", kaf_izmērs);
+        printf("Lūdzu, Jūsu kafija izmērā %c, balta, ar cukuru.\n", kaf_izmeers);
     }
     else if(string == 'm')
     {
         cukurs = cukuru();
         if(cukurs == 0)
-        printf("Lūdzu, Jūsu kafija izmērā %c, melna, bez cukura.\n", kaf_izmērs);
+        printf("Lūdzu, Jūsu kafija izmērā %c, melna, bez cukura.\n", kaf_izmeers);
         else if(cukurs == 1)
-        printf("Lūdzu, Jūsu kafija izmērā %c, melna, ar cukuru.\n", kaf_izmērs);
+        printf("Lūdzu, Jūsu kafija izmērā %c, melna, ar cukuru.\n", kaf_izmeers);
     }
 }
 
