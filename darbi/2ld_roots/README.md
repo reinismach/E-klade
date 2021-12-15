@@ -47,3 +47,5 @@ int main()
 
     return 0;
 }
+
+![sin(x:2)_grafiks2](https://user-images.githubusercontent.com/90239563/146250214-80b231b8-4186-4dd2-b86c-a2ee54689c2d.png)
