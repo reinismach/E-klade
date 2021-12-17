@@ -1,3 +1,7 @@
+Šī programma atrod x vērtību izvēlētajai funkcijas vērtībai iepriekš izvēlētajā apgabalā. Šajā metodē tiek realizēta saknes meklēšana, izmantojot vērtību zīmes jeb plusus, mīnusus.
+
+Kods:
+
 #include <stdio.h>
 #include <math.h>
 int main()
