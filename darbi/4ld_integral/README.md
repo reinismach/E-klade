@@ -18,7 +18,7 @@ void main()
     fflush(stdin);
     scanf("%f", &eps);
 
-    integr2 = ((b-a)*(sin(a)+sin(b))/n)+2*eps;
+    integr2 = ((b-a)*(sin(a/2)+sin(b/2))/n)+2*eps;
     while(fabs(integr2-integr1)>eps)
     {
         n *= 2;
@@ -26,7 +26,7 @@ void main()
         integr1 = integr2;
         integr2 = 0;
         for(k=0 ; k<n ; k++)
-        integr2 += h*sin((a+(k+0,5)*h));
+        integr2 += h*sin((a+(k+0,5)*h)/2);
     }
     printf("Integrāļa vērtība: %.2f\n", integr2);
 }
