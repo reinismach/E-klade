@@ -72,6 +72,12 @@ int main()
 
 ![sin(x:2)_grafiks4](https://user-images.githubusercontent.com/90239563/147565150-08fd7f8c-ef53-4142-83e3-01ccd742f21f.png)
 
-Attēls: https://user-images.githubusercontent.com/90239563/147565150-08fd7f8c-ef53-4142-83e3-01ccd742f21f.png
+Grafika attēls: https://user-images.githubusercontent.com/90239563/147565150-08fd7f8c-ef53-4142-83e3-01ccd742f21f.png
+
+Pierādījums no Wolfram Alpha: 
+
+<img width="804" alt="Screenshot 2021-12-28 at 14 25 57" src="https://user-images.githubusercontent.com/90239563/147566242-513556ef-9edd-465e-a939-795709b3eae1.png">
+
+Wolfram Alpha attēls: https://user-images.githubusercontent.com/90239563/147566242-513556ef-9edd-465e-a939-795709b3eae1.png
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/4ld_integral/README.md
