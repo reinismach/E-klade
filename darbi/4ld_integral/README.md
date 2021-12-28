@@ -5,7 +5,7 @@
 
 int main()
 {
-    float a, b, eps, h, integr1=0., integr2, pirmais_integr, pedejais_integr;
+    float a, b, eps, h, integr1=0., integr2;
     int k, n=2;
 
     printf("Lūdzu, ievadiet minimuma robežas vērtību: ");
@@ -73,3 +73,5 @@ int main()
 ![sin(x:2)_grafiks4](https://user-images.githubusercontent.com/90239563/147565150-08fd7f8c-ef53-4142-83e3-01ccd742f21f.png)
 
 Attēls: https://user-images.githubusercontent.com/90239563/147565150-08fd7f8c-ef53-4142-83e3-01ccd742f21f.png
+
+md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/4ld_integral/README.md
