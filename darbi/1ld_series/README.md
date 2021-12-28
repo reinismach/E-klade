@@ -63,3 +63,5 @@ int main()
 
 ![sin(x:2)grafiks1](https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png)
 https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png
+md faila skats iekšpusē:
+https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/1ld_series/README.md
