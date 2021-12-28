@@ -6,8 +6,6 @@ Kods:
 
 #include <math.h>
 
-double mans_sinuss(double x);
-
 int main()
 {
     
