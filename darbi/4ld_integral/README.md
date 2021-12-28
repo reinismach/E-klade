@@ -1,11 +1,14 @@
 Šajā programmā tiek meklēts funkcijas integrālis izvēlētajā apgabalā ar izvēlēto precizitāti. Tiek pielietotas trīs metodes. Pirmā - taisnstūra metode, kur funkcijas laukums tiek sadalīts vairākos taisnstūros un tad tiek rēķināti un summēti to laukumi. Otrā - trapeču metode, kur taisnstūru vietā tiek pielietotas trapeces, kuru virsējās daļas seko funkcijas vērtībai. Šajā metodē arī tiek rēķināti un summēti trapeču laukumi. Trešā - Simpsona metode, kur tiek izmantoti otrās kārtas polinomi, lai izveidotu ieliekumu un vēl precīzāk sekotu funkcijas vērtībai. Šajā metodē tiek izmantoti uzreiz 2 intervāli, lai aprēķinātu laukumu, un tad tie tiek summēti ar nākamajiem diviem intervāliem. Pirmais un pēdējais intervāls tiek aprēķināts atsevišķi. Manis pētītā funkcija ir sin(x/2).
 
 #include <stdio.h>
+
 #include <math.h>
 
 int main()
 {
+    
     float a, b, eps, h, integr1=0., integr2;
+    
     int k, n=2;
 
     printf("Lūdzu, ievadiet minimuma robežas vērtību: ");
