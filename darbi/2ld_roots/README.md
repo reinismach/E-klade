@@ -3,10 +3,14 @@
 Kods:
 
 #include <stdio.h>
+
 #include <math.h>
+
 int main()
 {
+    
     float a, b, c, x, precizitate, a1, b1;
+    
     printf("Lūdzu, ievadiet minimālo robežas vērtību: ");
     fflush(stdin);
     scanf("%f", &a);
