@@ -95,3 +95,5 @@ int main()
 
     return 0;
 }
+
+raw: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/3ld_derivative/README.md
