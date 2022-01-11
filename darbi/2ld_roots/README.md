@@ -56,8 +56,26 @@ int main()
 ```
 Rezultāts:
 
+<img width="789" alt="LD2_rezultats" src="https://user-images.githubusercontent.com/90239563/148993797-4838af94-e53c-42ff-971e-551d4873536a.png">
+
 Grafiks:
-![sin(x:2)_grafiks2](https://user-images.githubusercontent.com/90239563/146250214-80b231b8-4186-4dd2-b86c-a2ee54689c2d.png)
-https://user-images.githubusercontent.com/90239563/146250214-80b231b8-4186-4dd2-b86c-a2ee54689c2d.png
+
+![LD2_grafiks](https://user-images.githubusercontent.com/90239563/148994804-48eafb78-70de-4dc4-9b00-1a9d7bf653a5.png)
+
+Gnuplot script:
+```
+# Scale font and line width (dpi) by changing the size! It will always display stretched.
+set terminal svg size 600,400 enhanced fname 'arial'  fsize 10 butt solid
+set output 'out.svg'
+
+# Key means label...
+set key inside bottom right
+set xlabel 'x'
+set ylabel 'y'
+set title 'sin(x/2) saknes meklēšana'
+set grid
+plot [-5:5] [-1.1:1.1] sin(x/2), '-' w p ls 1
+-0.62 -0.3
+```
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/2ld_roots/README.md
