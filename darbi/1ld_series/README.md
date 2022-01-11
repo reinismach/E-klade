@@ -1,18 +1,14 @@
 Šī programma atrod izvēlētās x vērtības funkcijas vērtību funkcijas definīcijas apgabalā. Šajā metodē tiek salīdzināts rezultāts no Teilora rindām un parastās funkcijas. Grafikā var redzēt, ka palielinoties Teilora rindas kārtas skaitlim, funkcija arvien garāku gabalu ir vienāda ar pētāmo funkciju. Manā gadījumā pētāmā funkcija bija sin(x/2).
 
 Kods:
-
+```
 #include <stdio.h>
-
 #include <math.h>
 
 int main()
 {
-    
     long double a499, a500;
-    
     double x, a0, S0, S499, S500;
-    
     int k=0;
 
     printf("sin(x/2) aprēķināšana\n\n");
@@ -64,10 +60,11 @@ int main()
 
     return 0;
 }
-
+```
 Rezultāts:
 
 Grafiks:
+
 ![sin(x:2)grafiks1](https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png)
 
 Attēls: https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png
