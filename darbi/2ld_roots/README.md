@@ -1,14 +1,12 @@
 Šī programma atrod x vērtību izvēlētajai funkcijas vērtībai iepriekš izvēlētajā apgabalā. Šajā metodē tiek realizēta saknes meklēšana, izmantojot vērtību zīmes jeb plusus, mīnusus.
 
 Kods:
-
+```
 #include <stdio.h>
-
 #include <math.h>
 
 int main()
 {
-    
     float a, b, c, x, precizitate, a1, b1;
     
     printf("Lūdzu, ievadiet minimālo robežas vērtību: ");
@@ -55,9 +53,11 @@ int main()
 
     return 0;
 }
+```
+Rezultāts:
 
+Grafiks:
 ![sin(x:2)_grafiks2](https://user-images.githubusercontent.com/90239563/146250214-80b231b8-4186-4dd2-b86c-a2ee54689c2d.png)
-
-Attēls: https://user-images.githubusercontent.com/90239563/146250214-80b231b8-4186-4dd2-b86c-a2ee54689c2d.png
+https://user-images.githubusercontent.com/90239563/146250214-80b231b8-4186-4dd2-b86c-a2ee54689c2d.png
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/2ld_roots/README.md
