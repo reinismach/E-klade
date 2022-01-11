@@ -102,4 +102,9 @@ int main()
     return 0;
 }
 
+grafiks:
+![sin(x:2)_grafiks3](https://user-images.githubusercontent.com/90239563/148912861-5de76c43-fb96-42f0-9d1a-c8545a4c80ac.png)
+
+attēls: https://user-images.githubusercontent.com/90239563/148912861-5de76c43-fb96-42f0-9d1a-c8545a4c80ac.png
+
 raw: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/3ld_derivative/README.md
