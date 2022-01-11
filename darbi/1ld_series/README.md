@@ -63,10 +63,27 @@ int main()
 ```
 Rezultāts:
 
+<img width="786" alt="Screenshot 2022-01-11 at 11 24 02" src="https://user-images.githubusercontent.com/90239563/148916450-2c7be853-fad3-4fda-a252-2ca70389d194.png">
+https://user-images.githubusercontent.com/90239563/148916450-2c7be853-fad3-4fda-a252-2ca70389d194.png
+
 Grafiks:
 
-![sin(x:2)grafiks1](https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png)
+![LD1_grafiks](https://user-images.githubusercontent.com/90239563/148989394-49f98dfc-4391-4a6f-ac59-55aa41ec4616.png)
+https://user-images.githubusercontent.com/90239563/148989394-49f98dfc-4391-4a6f-ac59-55aa41ec4616.png
 
-Attēls: https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png
+Gnuplot script:
+```
+# Scale font and line width (dpi) by changing the size! It will always display stretched.
+set terminal svg size 600,400 enhanced fname 'arial'  fsize 10 butt solid
+set output 'out.svg'
 
+# Key means label...
+set key inside bottom right
+set xlabel 'x'
+set ylabel 'y'
+set title 'sin(x/2) un teilora rindas'
+set grid
+plot [-8:8] [-1.1:1.1] sin(x/2), x/2, x/2-x**3/48, x/2-x**3/48+x**5/3840, '-' w p ls 1
+3 0.997495
+```
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/1ld_series/README.md
