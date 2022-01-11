@@ -4,21 +4,11 @@
 
 #include <stdlib.h>
 
-double af(double x)
-{
-    
-    return sin(x/2);
-}
-double af1(double x)
-{
-    
-    return (cos(x/2))/2;
-}
-double af2(double x)
-{
-    
-    return (-sin(x/2))/4;
-}
+double af(double x) {return sin(x/2);}
+
+double af1(double x) {return (cos(x/2))/2;}
+
+double af2(double x) {return (-sin(x/2))/4;}
 
 int main()
 {
@@ -46,47 +36,63 @@ int main()
     double *arg, *f, *df1, *df2;
     int n;
 
-    arg = (double*) malloc(el+1);
+    arg = (double*) malloc((el+1)*sizeof(double));
     if(arg == NULL) exit (1);
 
-    f = (double*) malloc(el+1);
+    f = (double*) malloc((el+1)*sizeof(double));
     if(f == NULL) exit (1);
 
-    df1 = (double*) malloc(el);
+    df1 = (double*) malloc((el)*sizeof(double));
     if(df1 == NULL) exit (1);
 
-    df2 = (double*) malloc(el-1);
+    df2 = (double*) malloc((el-1)*sizeof(double));
     if(df2 == NULL) exit (1);
 
-    for(n=0 ; n<el ; n++)
+    for(n=0 ; n<=el ; n++)
     {
         arg[n] = a + n*delta_x;
         f[n] = af(arg[n]);
     }
-    arg[n] = '\0';
-    f[n] = '\0';
 
-    for(n=0 ; n<el-1 ; n++)
+    for(n=0 ; n<=el-1 ; n++)
     {
-        df1[n] = (af(arg[n+1])-af(arg[n]))/delta_x;
+        df1[n] = (f[n+1]-f[n])/delta_x;
     }
-    df1[n] = '\0';
 
-    for(n=0 ; n<el-2 ; n++)
+    for(n=0 ; n<=el-2 ; n++)
     {
         df2[n] = (df1[n+1]-df1[n])/delta_x;
     }
-    df2[n] = '\0';
 
     printf("|%13s||%13s||%13s|%13s|%13s|%13s|\n", "x", "f", "f\'", "f\'", "f\'\'", "f\'\'");
     printf("|%13s||%13s||%13s|%13s|%13s|%13s|\n", " ", " ", " analītiskais", "diferencēšana", " analītiskais", "diferencēšana");
-    for(n=0; n<el-2 ; n++)
+    for(n=0; n<=el-2 ; n++)
     {
         printf("|%13.3lf||%13.3lf||%13.3lf|%13.3lf|%13.3lf|%13.3lf|\n", arg[n], f[n], af1(arg[n]), df1[n], af2(arg[n]), df2[n]);
     }
     printf("|%13.3lf||%13.3lf||%13.3lf|%13.3lf|%13.3lf|%13s|\n", arg[n], f[n], af1(arg[n]), df1[n], af2(arg[n]), "nav");
     n++;
     printf("|%13.3lf||%13.3lf||%13.3lf|%13s|%13.3lf|%13s|\n", arg[n], f[n], af1(arg[n]), "nav", af2(arg[n]), "nav");
+
+    FILE *pfile;
+
+    pfile = fopen("derivative.dat", "w");
+
+    if(pfile==NULL) exit (1);
+    else
+    {
+        fprintf(pfile, "|%13s||%13s||%13s|%13s|%13s|%13s|\n", "x", "f", "f\'", "f\'", "f\'\'", "f\'\'");
+        fprintf(pfile, "|%13s||%13s||%13s|%13s|%13s|%13s|\n", " ", " ", " analītiskais", "diferencēšana", " analītiskais", "diferencēšana");
+        for(n=0 ; n<=el-2 ; n++)
+        {
+            fprintf(pfile, "|%13.3lf||%13.3lf||%13.3lf|%13.3lf|%13.3lf|%13.3lf|\n", arg[n], f[n], af1(arg[n]), df1[n], af2(arg[n]), df2[n]);
+        }
+        fprintf(pfile, "|%13.3lf||%13.3lf||%13.3lf|%13.3lf|%13.3lf|%13s|\n", arg[n], f[n], af1(arg[n]), df1[n], af2(arg[n]), "nav");
+        n++;
+        fprintf(pfile, "|%13.3lf||%13.3lf||%13.3lf|%13s|%13.3lf|%13s|\n", arg[n], f[n], af1(arg[n]), "nav", af2(arg[n]), "nav");
+    }
+
+    fclose(pfile);
 
     free (arg);
     free (f);
