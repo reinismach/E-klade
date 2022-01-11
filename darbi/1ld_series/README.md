@@ -65,7 +65,38 @@ int main()
     return 0;
 }
 
-![sin(x:2)grafiks1](https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png)
+Rezultāts:
+
+Lūdzu, ievadiet x vērtību: 3
+
+Summas izteiksme: 
+
+               500
+              _____
+              \           k     2*k+1     -2*k-1
+               \      (-1)  *  x      *  2
+sin(3.00/2) =   >    ___________________________
+               /
+              /____             (2*k+1)!
+               k=0
+
+Rekurences funkcionālā reizinātāja izteiksme: 
+
+            2     -2
+    (-1) * x  *  2
+  ____________________
+ 
+    (2*k) * (2*k+1)
+
+funkcijas definīcijas apgabals: x∈ R 
+
+a0   = 1.50             S0   = 1.50
+a499 = -2.044201e-2389  S499 = 0.997495
+a500 = 4.594857e-2395   S500 = 0.997495
+Funkcijas vērtība izmantojot Teilora rindas izteiksmi = 0.997495
+Funkcijas vērtība, izmantojot funkcijas izteiksmi = 0.997495
+
+Grafiks: ![sin(x:2)grafiks1](https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png)
 
 Attēls: https://user-images.githubusercontent.com/90239563/146528992-408f222b-d0fb-44aa-8ef5-4044a2d2dae1.png
 
