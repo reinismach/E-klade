@@ -98,6 +98,7 @@ plot [-5:3] [-1.1:1.1] sin(x/2) with impulses
 
 Pierādījums no Wolfram Alpha: 
 
-
+<img width="795" alt="Screenshot 2022-01-12 at 16 19 24" src="https://user-images.githubusercontent.com/90239563/149157555-5c013b74-55bc-47ed-9633-c0071aee15b2.png">
+https://user-images.githubusercontent.com/90239563/149157555-5c013b74-55bc-47ed-9633-c0071aee15b2.png
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/4ld_integral/README.md
