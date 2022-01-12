@@ -1,14 +1,13 @@
 Šajā programmā tiek meklēts funkcijas integrālis izvēlētajā apgabalā ar izvēlēto precizitāti. Tiek pielietotas trīs metodes. Pirmā - taisnstūra metode, kur funkcijas laukums tiek sadalīts vairākos taisnstūros un tad tiek rēķināti un summēti to laukumi. Otrā - trapeču metode, kur taisnstūru vietā tiek pielietotas trapeces, kuru virsējās daļas seko funkcijas vērtībai. Šajā metodē arī tiek rēķināti un summēti trapeču laukumi. Trešā - Simpsona metode, kur tiek izmantoti otrās kārtas polinomi, lai izveidotu ieliekumu un vēl precīzāk sekotu funkcijas vērtībai. Šajā metodē tiek izmantoti uzreiz 2 intervāli, lai aprēķinātu laukumu, un tad tie tiek summēti ar nākamajiem diviem intervāliem. Pirmais un pēdējais intervāls tiek aprēķināts atsevišķi. Manis pētītā funkcija ir sin(x/2).
 
+Kods:
+```
 #include <stdio.h>
-
 #include <math.h>
 
 int main()
 {
-    
     float a, b, eps, h, integr1=0., integr2;
-    
     int k, n=2;
 
     printf("Lūdzu, ievadiet minimuma robežas vērtību: ");
@@ -72,15 +71,17 @@ int main()
 
     return 0;
 }
+```
 
-![sin(x:2)_grafiks4](https://user-images.githubusercontent.com/90239563/147565150-08fd7f8c-ef53-4142-83e3-01ccd742f21f.png)
+Rezultāts:
 
-Grafika attēls: https://user-images.githubusercontent.com/90239563/147565150-08fd7f8c-ef53-4142-83e3-01ccd742f21f.png
+
+Grafiks:
+
 
 Pierādījums no Wolfram Alpha: 
 
 <img width="804" alt="Screenshot 2021-12-28 at 14 25 57" src="https://user-images.githubusercontent.com/90239563/147566242-513556ef-9edd-465e-a939-795709b3eae1.png">
-
-Wolfram Alpha attēls: https://user-images.githubusercontent.com/90239563/147566242-513556ef-9edd-465e-a939-795709b3eae1.png
+https://user-images.githubusercontent.com/90239563/147566242-513556ef-9edd-465e-a939-795709b3eae1.png
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/4ld_integral/README.md
