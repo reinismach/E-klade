@@ -100,8 +100,12 @@ int main()
 ```
 Rezultāts:
 
+<img width="789" alt="LD3_rezultats" src="https://user-images.githubusercontent.com/90239563/149149482-6e5bbb20-fd83-4374-959f-d6ef977e2a08.png">
+https://user-images.githubusercontent.com/90239563/149149482-6e5bbb20-fd83-4374-959f-d6ef977e2a08.png
+
 Grafiks:
-![sin(x:2)_grafiks3](https://user-images.githubusercontent.com/90239563/148912861-5de76c43-fb96-42f0-9d1a-c8545a4c80ac.png)
-https://user-images.githubusercontent.com/90239563/148912861-5de76c43-fb96-42f0-9d1a-c8545a4c80ac.png
+
+![LD3_grafiks](https://user-images.githubusercontent.com/90239563/149149399-ba8f0eef-cb3e-4d4f-948d-4a25acccf793.png)
+https://user-images.githubusercontent.com/90239563/149149399-ba8f0eef-cb3e-4d4f-948d-4a25acccf793.png
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/3ld_derivative/README.md
