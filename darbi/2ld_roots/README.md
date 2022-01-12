@@ -57,10 +57,13 @@ int main()
 Rezultāts:
 
 <img width="789" alt="LD2_rezultats" src="https://user-images.githubusercontent.com/90239563/148993797-4838af94-e53c-42ff-971e-551d4873536a.png">
+https://user-images.githubusercontent.com/90239563/148993797-4838af94-e53c-42ff-971e-551d4873536a.png
 
 Grafiks:
 
 ![LD2_grafiks](https://user-images.githubusercontent.com/90239563/148994804-48eafb78-70de-4dc4-9b00-1a9d7bf653a5.png)
+https://user-images.githubusercontent.com/90239563/148994804-48eafb78-70de-4dc4-9b00-1a9d7bf653a5.png
+
 
 Gnuplot script:
 ```
