@@ -49,7 +49,7 @@ int main()
     }
 
     printf("\nApgabalā [%.2f;%.2f] vērtība c = %.2f atrodas pie x=%.2f, jo sin(%.2f/2) = %.2f\n", a1,b1,c,x,x,sin(x/2));
-    printf("Nepieciešamais iterāciju skaits, lai aprēķinātu šo vērtību ar ievadīto precizitāti, bija: %d\n", k);
+    printf("Nepieciešamais iterāciju skaits, lai aprēķinātu šo vērtību ar ievadīto precizitāti bija %d\n", k);
 
     return 0;
 }
