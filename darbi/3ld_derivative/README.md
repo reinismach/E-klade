@@ -108,7 +108,7 @@ Grafiks:
 ![LD3_grafiks](https://user-images.githubusercontent.com/90239563/149149399-ba8f0eef-cb3e-4d4f-948d-4a25acccf793.png)
 https://user-images.githubusercontent.com/90239563/149149399-ba8f0eef-cb3e-4d4f-948d-4a25acccf793.png
 
-Gnuplot script:
+Gnuplot data:
 ```
 #             x              f             f'            f'           f''           f'' 
 #                                analītiskais diferencēšana  analītiskais diferencēšana 
@@ -133,6 +133,21 @@ Gnuplot script:
          2.800          0.985          0.085         0.073        -0.246        -0.248 
          2.900          0.993          0.060         0.048        -0.248           nav 
          3.000          0.997          0.035           nav        -0.249           nav 
+```
+
+Gnuplot script:
+```
+# Scale font and line width (dpi) by changing the size! It will always display stretched.
+set terminal svg size 600,400 enhanced fname 'arial'  fsize 10 butt solid
+set output 'out.svg'
+
+# Key means label...
+set key inside bottom right
+set xlabel 'x'
+set ylabel 'y'
+set title 'sin(x/2) funkcija un tās atvasinājumi'
+set grid
+plot [1:3] [-1.1:1.1] "data.txt" using 1:2 title 'sin(x/2) funkcija' with lines, "data.txt" using 1:3 title '1. atvasinājums(analītiskais)' with linespoints, "data.txt" using 1:4 title '1. atvasinājums(diferencēšana)' with points, "data.txt" using 1:5 title '2. atvasinājums(analītiskais)' with linespoints, "data.txt" using 1:6 title '2. atvasinājums(diferencēšana)' with points
 ```
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/3ld_derivative/README.md
