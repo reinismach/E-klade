@@ -1,11 +1,13 @@
+Šī programma izrēķina, attēlo un ieraksta failā argumenta un funkcijas vērtības, kā arī 1. un 2. funkcijas atvasinājuma vērtības, izmantojot gan atvasinājuma analītisko formulu, gan diferencēšanu. Šīs vērtības tiek rēķinātas izvēlētajā funkcijas apgabalā un ar izvēlētu argumenta soļa vērtību.
+
+Kods:
+```
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
 
 double af(double x) {return sin(x/2);}
-
 double af1(double x) {return (cos(x/2))/2;}
-
 double af2(double x) {return (-sin(x/2))/4;}
 
 int main()
@@ -21,13 +23,11 @@ int main()
     fflush(stdout);
     scanf("%lf", &b);
 
-    printf("Lūdzu, ievadiet precizitātes vērtību: ");
+    printf("Lūdzu, ievadiet precizitātes vērtību(argumenta soli): ");
     fflush(stdout);
     scanf("%lf", &delta_x);
 
     el = (b-a)/delta_x;
-
-    printf("el vērtība = %d\n", el);
 
     double *arg, *f, *df1, *df2;
     int n;
@@ -97,10 +97,11 @@ int main()
 
     return 0;
 }
+```
+Rezultāts:
 
-grafiks:
+Grafiks:
 ![sin(x:2)_grafiks3](https://user-images.githubusercontent.com/90239563/148912861-5de76c43-fb96-42f0-9d1a-c8545a4c80ac.png)
+https://user-images.githubusercontent.com/90239563/148912861-5de76c43-fb96-42f0-9d1a-c8545a4c80ac.png
 
-attēls: https://user-images.githubusercontent.com/90239563/148912861-5de76c43-fb96-42f0-9d1a-c8545a4c80ac.png
-
-raw: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/3ld_derivative/README.md
+md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/3ld_derivative/README.md
