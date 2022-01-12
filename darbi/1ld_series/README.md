@@ -4,14 +4,12 @@ Kods:
 ```
 #include <stdio.h>
 #include <math.h>
-
 int main()
 {
     long double a499, a500;
     double x, a0, S0, S499, S500;
     int k=0;
 
-    printf("sin(x/2) aprēķināšana\n\n");
     printf("Lūdzu, ievadiet x vērtību: ");
     fflush(stdin);
     scanf("%lf", &x);
@@ -19,25 +17,25 @@ int main()
     printf("\nSummas izteiksme: \n\n");
     printf("               500\n");
     printf("              _____\n");
-    printf("              %c          k     2*k+1   -2*k-1\n",92);
-    printf("               %c     (-1)  *  x   *   2\n",92);
-    printf("sin(%.2lf/2) =   >    _________________________\n", x);
+    printf("              %c           k     2*k+1     -2*k-1\n",92);
+    printf("               %c      (-1)  *  x      *  2\n",92);
+    printf("sin(%.2lf/2) =   >    ___________________________\n", x);
     printf("               /\n");
-    printf("              /____           (2*k+1)!\n");
+    printf("              /____             (2*k+1)!\n");
     printf("               k=0\n\n");
     
     printf("Rekurences funkcionālā reizinātāja izteiksme: \n\n");
     printf("            2     -2\n");
     printf("    (-1) * x  *  2\n");
-    printf("  _____________________\n");
+    printf("  ____________________\n");
     printf(" \n");
-    printf("     (2*k) * (2*k+1)\n\n");
+    printf("    (2*k) * (2*k+1)\n\n");
 
     printf("funkcijas definīcijas apgabals: x∈ R \n\n");
 
     a0 = pow(-1,0)*pow(x,2*0+1)*pow(2,-2*0-1)/(1.);
     S0 = a0;
-    printf("a0   = %.2lf\tS0   = %.2lf\n", a0,S0);
+    printf("a0   = %.2lf\t\tS0   = %.2lf\n", a0,S0);
 
     a499 = a0;
     S499 = S0;
