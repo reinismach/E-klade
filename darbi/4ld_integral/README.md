@@ -75,13 +75,29 @@ int main()
 
 Rezultāts:
 
+<img width="789" alt="LD4_rezultats" src="https://user-images.githubusercontent.com/90239563/149152927-e77bf22d-8c5e-4558-81b6-0f1c092439cf.png">
 
 Grafiks:
 
+![LD4_grafiks](https://user-images.githubusercontent.com/90239563/149154239-7e113a3d-3db6-487a-804e-c3d4144691e8.png)
+
+Gnuplot script:
+```
+# Scale font and line width (dpi) by changing the size! It will always display stretched.
+set terminal svg size 600,400 enhanced fname 'arial'  fsize 10 butt solid
+set output 'out.svg'
+
+# Key means label...
+set key inside bottom right
+set xlabel 'x'
+set ylabel 'y'
+set title 'sin(x/2) integrāļa vērtība'
+set grid
+plot [-5:3] [-1.1:1.1] sin(x/2) with impulses
+```
 
 Pierādījums no Wolfram Alpha: 
 
-<img width="804" alt="Screenshot 2021-12-28 at 14 25 57" src="https://user-images.githubusercontent.com/90239563/147566242-513556ef-9edd-465e-a939-795709b3eae1.png">
-https://user-images.githubusercontent.com/90239563/147566242-513556ef-9edd-465e-a939-795709b3eae1.png
+
 
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/4ld_integral/README.md
