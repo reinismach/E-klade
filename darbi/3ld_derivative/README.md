@@ -1,7 +1,5 @@
 #include <stdio.h>
-
 #include <math.h>
-
 #include <stdlib.h>
 
 double af(double x) {return sin(x/2);}
@@ -12,9 +10,7 @@ double af2(double x) {return (-sin(x/2))/4;}
 
 int main()
 {
-    
     double a, b, delta_x;
-    
     int el;
 
     printf("Lūdzu, ievadiet minimuma robežas vērtību: ");
