@@ -102,5 +102,4 @@ Pierādījums no Wolfram Alpha:
 https://user-images.githubusercontent.com/90239563/149157555-5c013b74-55bc-47ed-9633-c0071aee15b2.png
 
 
-
 md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/4ld_integral/README.md
