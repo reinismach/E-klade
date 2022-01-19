@@ -97,10 +97,42 @@ int main()
 ```
 Rezultāts:
 
+<img width="779" alt="LD5_rezultats" src="https://user-images.githubusercontent.com/90239563/150124205-901aa725-79bb-465c-bfce-3b2be8cc5647.png">
+https://user-images.githubusercontent.com/90239563/150124205-901aa725-79bb-465c-bfce-3b2be8cc5647.png
+
 Grafiks:
 
+![LD5_grafiks](https://user-images.githubusercontent.com/90239563/150124285-e3b17896-c208-444d-8e3c-6dc2962f70c0.png)
+https://user-images.githubusercontent.com/90239563/150124285-e3b17896-c208-444d-8e3c-6dc2962f70c0.png
+
 Gnuplot data:
+```
+#    burti	   biežums
+        a			3
+        b			1
+    	k			2
+        l			1
+        o			1
+        u			1
+```
 
 Gnuplot script:
+```
+# Scale font and line width (dpi) by changing the size! It will always display stretched.
+set terminal svg size 600,400 enhanced fname 'arial'  fsize 10 butt solid
+set output 'out.svg'
+
+# Key means label...
+set key inside bottom right
+set xlabel 'rindas vērtības'
+set ylabel 'vērtību biežums'
+set title 'rindas histogramma'
+set style data histogram
+box_wd = 2
+set boxwidth box_wd
+set style fill solid
+unset key
+plot [-1:6] [0:4] 'data.txt' using 2:xtic(1)
+```
 
 md faila skats iekšpusē: 
