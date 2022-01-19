@@ -76,10 +76,12 @@ int main()
 Rezultāts:
 
 <img width="789" alt="LD4_rezultats" src="https://user-images.githubusercontent.com/90239563/149152927-e77bf22d-8c5e-4558-81b6-0f1c092439cf.png">
+https://user-images.githubusercontent.com/90239563/149152927-e77bf22d-8c5e-4558-81b6-0f1c092439cf.png
 
 Grafiks:
 
 ![LD4_grafiks](https://user-images.githubusercontent.com/90239563/149154239-7e113a3d-3db6-487a-804e-c3d4144691e8.png)
+https://user-images.githubusercontent.com/90239563/149154239-7e113a3d-3db6-487a-804e-c3d4144691e8.png
 
 Gnuplot script:
 ```
