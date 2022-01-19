@@ -135,4 +135,4 @@ unset key
 plot [-1:6] [0:4] 'data.txt' using 2:xtic(1)
 ```
 
-md faila skats iekšpusē: 
+md faila skats iekšpusē: https://raw.githubusercontent.com/reinismach/RTR105/main/darbi/5ld_statistics/README.md
