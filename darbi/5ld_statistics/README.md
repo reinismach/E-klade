@@ -35,7 +35,7 @@ int main()
     printf("Lūdzu, ievadiet teksta rindu: ");
     scanf("%s", txt);
 
-    int i, j, sum, sum2=0, vid, med, el=0, g=strlen(txt);
+    int i, j, sum, vid, med, g=strlen(txt);
 
     kartosana(txt);
 
