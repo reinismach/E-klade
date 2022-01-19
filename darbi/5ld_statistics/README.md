@@ -1,3 +1,4 @@
+Šī programma sakārto lietotāja ievadīto teksta rindu alfabētiskā secībā jeb, skatoties pēc ASCII skaitļiem, no mazākās vērtības uz lielāko. Tā arī atrod un parāda mazāko, lielāko, vidējo vērtību, kā arī rindas mediānu un modu vai modas.
 
 Kods:
 ```
